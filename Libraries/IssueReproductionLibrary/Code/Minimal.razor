@@ -1,0 +1,11 @@
+﻿@using Sandbox
+@inherits PanelComponent
+@attribute [Title("Minimal Library StyleSheet Reproduction")]
+
+<root>
+</root>
+
+@code {
+	protected override void OnEnabled() =>
+		Panel.StyleSheet.Load( "Minimal.scss" );
+}
